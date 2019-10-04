@@ -1,0 +1,382 @@
+
+/* html {
+    font-size: 62.5%; 
+}
+@media only screen and (max-width: 75em) {
+    html {
+    font-size: 56.25%; } }
+@media only screen and (max-width: 56.25em) {
+    html {
+    font-size: 50%; } }
+@media only screen and (min-width: 1em) {
+    html {
+    font-size: 75%; } }
+
+body {
+    
+    overflow-x: hidden;
+}
+
+
+html{
+    font-family: 'Ubuntu', sans-serif;
+} */
+
+
+
+/* starting of top header */
+
+.details-top-header{
+    background-color: #3b3e4b;
+    color: #fff;
+    font-size: 13px;
+}
+
+.details-top-header li p{
+    border-radius: 7px ;
+    font-size: 10px;
+}
+
+.details-top-header .lefting{
+    padding-right: 10px;
+}
+
+
+.details-top-header .print li ,
+.details-top-header .print li a{
+    padding: 0 5px;
+    color: rgb(175, 173, 173);
+}
+
+.details-top-header .print li a:hover{
+    color:  rgb(175, 173, 173);
+}
+
+
+.details-top-header .print a:focus{
+    color: #e41717 !important;
+    text-decoration: none;
+}
+
+/* Ending of top Header */
+
+
+
+
+
+/* starting of whole slider section */
+
+.main-details-slider{
+    background-color: #303441;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
+
+.main-details-slider .left-main-details i{
+    font-size: 30px;
+    color: var(--sec-color);
+    padding-bottom: 17px;
+    
+}
+
+.main-details-slider .left-main-details li{
+    padding: 0 0 0 10px;
+    margin-left: 0px;
+}
+
+.main-details-slider .left-main-details li span{
+    display: flex;
+}
+.main-details-slider .left-main-details li p{
+    padding: 0 4px;
+    font-size: 16px;
+}
+
+.main-details-slider .price .discount{
+    font-size: 16px;
+}
+
+.main-details-slider .price .regular{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.main-details-slider .price li{
+    padding: 0 7px;
+}
+
+.main-details-slider .owl-carousel .owl-nav button.owl-next {
+   position: absolute;
+    font-size: 80px;
+    top: 35%;
+    right: 0;
+    outline: none;
+    transition: .3s;
+}
+
+.main-details-slider .owl-carousel .owl-nav button.owl-next:hover {
+    background: transparent;
+    outline: none;
+    color: #cecfd3;
+}
+
+.main-details-slider .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+     font-size: 80px;
+     top: 35%;
+     left: 0;
+     outline: none;
+     transition: .3s;
+ }
+
+ .main-details-slider .owl-carousel .owl-nav button.owl-prev:hover {
+    background: transparent;
+    outline: none;
+    color: #cecfd3;
+}
+
+
+
+.main-details-slider .photo-numbering p{
+    background: #535355ab;
+    display: inline-block;
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    z-index: 3;
+    border-radius: 10px;
+    padding: 1px 9px;
+}
+
+.main-details-slider .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+
+  .main-details-slider
+    .column {
+        flex: 25%;
+        max-width: 33%;
+        padding: 0 4px;
+      }
+  
+
+      .main-details-slider .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      .main-details-slider .column a img{
+          transition: .5s;
+          height: 100px;
+      }
+
+      .main-details-slider .column a img:hover{
+         border: 4px solid #fff;
+      }
+
+/* starting of whole slider section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* staring of Description Section */
+.description .card{
+    padding: 15px;
+    border-radius: 0;
+}
+.description .card img{
+    height: 25px;
+    width: 140px;
+    
+    
+    
+    /* display: inline-block; */
+}
+
+.description .sticky{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: -130px;
+    box-shadow: 1px 5px 30px 10px #3034415b;
+    
+}
+
+.description .card span{
+    font-size: 17px;
+}
+
+.description .card .wrapper{
+    padding:13px  6px;
+    border: 1px solid grey;
+    display:inline-block;
+    border-radius: 13px;
+}
+
+.description .card .contact{
+    background-color: var(--pri-color);
+    padding: 13px;
+    font-family: 'abel';
+}
+
+.description .card .contact a{
+    padding: 25px ;
+    font-size: 15px; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.description .card .contact:hover{
+   background: var(--sec-color);
+}
+/* Ending of description section */
+
+
+
+.hover-details .details-wrapper{
+    padding:15px 6px;
+    border: 1px solid grey;
+    /* display:inline-block; */
+    border-radius: 13px;
+}
+
+.sticky .hover-details{
+    position: absolute;
+    z-index:5;
+    left:0;
+    bottom:98%;
+    display: none;
+    box-shadow: 0 2px 30px grey;
+}
+.sticky .hover-details::before{
+    content: '';
+    position: absolute;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-top: 15px solid #f9f9f9;
+    bottom:-5%;
+    right: 18%;
+}
+
+.card .wrapper img:hover~.hover-details,
+.card .wrapper img .hover-details:hover,
+.card .wrapper:hover .hover-details{
+    display: block;
+}
+
+
+
+/* Description Section */
+
+
+.description .main-description{
+    padding:50px 13px 15px 13px;
+}
+
+
+.description .main-description h2{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.description .main-description p{
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.description hr{
+    border-top: 1.8px solid rgba(0,0,0,.2);
+}
+
+
+/* location section */
+
+
+.location{
+    padding: 20px 0;
+}
+
+
+
+/* Features section */
+
+.features{
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.features i{
+    font-size: 43px;
+    color:var(--pri-color);
+    padding: 0 10px 0 0;
+    text-shadow: 0 0 3px grey;
+}
+.features .col-sm-3{
+    margin-top: 13px;
+}
+
+
+/* Apartments Amenities */
+.apartments{
+    padding: 40px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.apartments i{
+    color:var(--pri-color);   
+    padding-right: 5px;
+}
+
+.apartments .row{
+    
+    font-size: 16px;
+}
+
+.apartments .border{
+    border: 1px solid grey;
+    padding: 40px 10px;
+}
+
+
+.apartments .col-sm-3{
+    margin-top: 10px;
+}
+
+
+.nearby{
+    padding: 40px 0;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+
+.nearby .heading {
+    font-size: 35px;
+    color: var(--pri-color);  
+}
+
+.nearby .items .checked {
+    color: #e41717 !important;
+}
+
+.nearby .items span{
+    color: rgb(125, 126, 128);
+}
+
+
+
+
+
+
+
+

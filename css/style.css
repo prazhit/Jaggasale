@@ -1,0 +1,1511 @@
+/* -- ----------------------------------------Prasid Codes--------------------------- */
+
+:root{
+  --bg-color: #303441;
+  --pri-color: #234DD4;
+  --sec-color: #43c370;
+  --pri-font: 'Farro', sans-serif;
+  --sec-font: 'Roboto', sans-serif;
+  --theme: #43c370;
+
+}
+
+img{
+    object-fit:cover;
+}
+input{
+    font-family: 'abel';
+}
+::-webkit-scrollbar{
+   width:12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(var(--pri-color),var(--sec-color));
+
+}
+
+/* ---------------------Media Query---------------------- */
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    .header .col-lg-5{
+        display: none;
+    }
+
+    .header .menu{
+        display: block!important;
+        position: absolute;
+        top:6.5%;
+        right:5%;
+    }
+
+    .header .col-lg-5{
+        display: none;
+    }
+    .header .listing .list{
+        margin-left: 150px!important;
+    }
+    .header .login::before,
+    .header .wish::before{
+        top:calc(0% - 30px)!important;
+    }
+    /* .banner .flex-type{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width:100%;
+    } */
+    .contact-us .img-pushpa{
+        display: none;
+    }
+      
+
+}
+
+
+@media screen and (min-width: 500px) and (max-width:768px){
+    .header .col-lg-5{
+        display: none;
+    }
+    .header .menu{
+        display: block!important;
+        position: absolute;
+        top:7%;
+        right:5%;
+    }
+    .banner .tab-content .tab-pane .anemity{
+        overflow-y:scroll;
+        height:250px;
+    }
+    .banner{
+        min-height:120vh!important;
+    }
+    #owl-sold-property .owl-nav .owl-next,
+    #owl-sold-property .owl-nav .owl-prev{
+        display: none;
+    }
+    #owl-rent-property .owl-nav .owl-next,
+    #owl-rent-property .owl-nav .owl-prev{
+        display: none;
+    }
+    section.contact-us .ofc{
+        width:100%!important;
+    }
+    .contact-us .img-pushpa{
+        display: none;
+    }
+    section.new-home-category iframe.sticky-top{
+        margin-top: 20px!important;
+    }
+    
+}
+
+
+@media screen and (max-width:490px){
+    .header .col-lg-5{
+        display: none;
+    }
+    .header .menu{
+        display: block!important;
+        position: absolute;
+        top:5%;
+        right:5%;
+    }
+    .header .login::before,
+    .header .wish::before{
+        top:calc(0% - 15px)!important;
+    }
+    .banner .tab-content .tab-pane .anemity{
+        overflow-y:scroll;
+        height:250px;
+    }
+    .banner{
+        min-height:120vh!important;
+    }
+    .header .listing .list{
+        margin-left: 0px!important;
+    }
+    .featured .title{
+        display: inline-block!important;
+        text-align:center;
+    }
+    #owl-sold-property .owl-nav .owl-next,
+    #owl-sold-property .owl-nav .owl-prev{
+        display: none;
+    }
+    #owl-rent-property .owl-nav .owl-next,
+    #owl-rent-property .owl-nav .owl-prev{
+        display: none;
+    }
+    .containerfooter .wrap{
+        justify-content: center!important;
+    }
+    footer.plain .foranchors{
+        display:none;
+    }
+    section.contact-us .ofc{
+        width:100%!important;
+    }
+    .contact-us .img-pushpa{
+        display: none;
+    }
+    .description .sticky{
+        margin-top:0!important;
+    }
+    section.news-detail .comment .image{
+        display: block!important;
+        text-align:center;
+    }
+    section.news-detail .comment .image b{
+        border-right:none!important;
+    }
+    .admin-comment{
+        display: flex;
+        flex-wrap: wrap;
+        padding:50px 20px!important;
+        justify-content:center;
+    }
+    .admin-comment .img-content{
+        margin-top:30px;
+        text-align: center;
+    }
+    section.new-home-category .apartments{
+        display: block!important;
+        text-align:center;
+
+    }
+    section.new-home-category .apartments .new{
+        margin:0 auto;
+    }
+    section.new-home-category .cards .badge1{
+        transform: scale(1)!important;
+        
+    }
+    section.new-home-category .cards .badge2{
+        transform: scale(1)!important;
+        transition-delay: .3s;
+    }
+    section.new-home-category .cards .camera{
+        transform: scale(1)!important;
+        transition-delay: .5s;
+    }
+    section.new-home-category .cards .overlay{
+        opacity:1;
+    }
+    section.new-home-category .cards .img-content{
+        transition-delay: .5s;
+        opacity:1!important;
+    }
+    section.new-home-category .cards .home-heart{
+        transform:scale(1)!important;
+        transition-delay:1s;
+    }
+    section.new-home-category .sticky-top{
+        margin-top: 20px!important;
+    }
+}
+
+/* ------------------------------------End of Media Query--------------------- */
+
+/* -- ----------------------------------------Prasid Codes--------------------------- */
+
+/* ------------------------------Start of Header---------------------- */
+
+.header{
+    font-family: 'Abel', sans-serif;
+    float:left;
+}
+
+.header a.hm{
+    color:white;
+    text-decoration:none;
+    background: var(--pri-color);
+    transition:.5s;
+}
+
+.header .dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  
+}
+
+.header .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  margin-top:13px;
+  border-top: 5px solid var(--pri-color);
+}
+
+.header .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.header .dropdown-content a:hover {background-color: #ddd;}
+
+.header .dropdown:hover .dropdown-content {display: block;}
+
+.header .dropdown:hover .dropbtn {background-color: var(--pri-color);color:white!important;}
+
+.header .listing .list a{
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1px solid white;
+    text-decoration: none;
+    color:white;
+    transition: .5s;
+    display: inline-block;
+    white-space: nowrap;
+}
+.header .listing .badge{
+    color:white;
+}
+
+.header .listing .list a:hover{
+    color:black;
+    background:white;
+}
+
+.header .listing .refresh{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding:8px 8px;
+    position:relative;
+
+}
+.header .listing .heart{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding:8px 12px;
+    position:relative;
+
+}
+
+.header .wish{
+    width: 200px;
+    color: black;
+    padding: 30px 0;
+    background: white;
+    position:absolute;
+    right:-90%;
+    top: 130%;
+    display: none;
+    box-shadow: 0 20px 80px rgba(0,0,0,.28);
+    z-index: 1;
+}
+.header .wish span{
+    background: var(--sec-color);
+    padding: 8px 10px;
+    color:white;
+    border-radius: 50%;
+    float:right;
+}
+
+.header .wish a{
+    display:block;
+    color: black;
+    text-decoration: none;
+    padding:15px 15px;
+}
+.header .wish a:hover{
+    background: rgba(128, 128, 128, 0.226);
+}
+
+
+.header .wish::before{
+    content:'\f0de';
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    right:32%;
+    font-weight: bolder;
+    font-size:2em;
+    top:calc(0% - 20px);
+    color: white;
+}
+
+.header .listing .user{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding:8px 12px;
+}
+
+.header .listing .user:hover~.login{
+    display: block;    
+}
+
+.header .listing .wishlist:hover .wish{
+    display: block;    
+}
+.header .listing .wishlist .wish:hover{
+    display: block;    
+}
+
+.header .listing .refresh span,
+.header .listing .heart span{
+    position:absolute;
+    top:0;
+    background: var(--sec-color);
+    border-radius: 10px;
+}
+
+.header .login{
+    width: 300px;
+    color: black;
+    padding: 30px ;
+    background: white;
+    position:absolute;
+    right:-35%;
+    top: 130%;
+    display: none;
+    z-index:2;
+    box-shadow: 0 20px 80px rgba(0,0,0,.28);
+}
+
+.header .login:hover{
+    display: block;
+}
+
+.header .login::before{
+    content:'\f0de';
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    right:10%;
+    font-weight: bolder;
+    font-size:2em;
+    top:calc(0% - 20px);
+    color: white;
+}
+
+.header .login .log:focus{
+    box-shadow:none;
+    border: 1.5px solid var(--sec-color)!important;
+}
+
+.header .login button{
+    background: var(--pri-color);
+    color: white;
+    transition: .5s;
+    height: 50px;
+}
+
+.header .login button:hover{
+    background: var(--sec-color);
+}
+.header .login form a{
+    color: var(--pri-color);
+    text-decoration: none;
+    transition: .5s;
+}
+.header .login form a:hover{
+    color: var(--sec-color);
+}
+
+/* --------------------Menu--------------------- */
+/* -- ----------------------------------------Prasid Codes--------------------------- */
+
+.header .overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+.header .overlay .overlay-content a{
+    display: block;
+    font-size:20px;
+    padding: 10px 10px;
+
+}
+.header .overlay .overlay-content .card-header{
+    transition:.5s;
+}
+.header .overlay .overlay-content .card:hover .card-header{
+    background: var(--pri-color);
+}
+.header .overlay .overlay-content .card:focus .card-header{
+    background: var(--pri-color);
+}
+
+.header .overlay .overlay-content .card:hover .card-header a{
+    color: white!important;
+}
+.header .overlay .overlay-content .card .card-body a{
+    color: black;
+    text-decoration:none;
+}
+.header .overlay .overlay-content .card .card-body a:focus{
+    color:var(--sec-color);
+}
+.header .overlay .overlay-content .card .card-body a:hover{
+    color:var(--pri-color);
+}
+.header .overlay .overlay-content .card {
+    border-radius: 0;
+}
+  
+.header .closenav{
+    position: absolute;
+    top:0;
+    left: 60%;
+    font-size: 30px;
+    background: var(--sec-color);
+    color:white;
+    text-decoration:none;
+    transform:scale(0);
+    transition:.5s;
+  }
+
+.header .heart a:focus{
+    color:red!important;
+}
+
+
+
+/* ------------------------------End of Header-------------------------- */
+
+/* -- ----------------------------------------Prasid Codes--------------------------- */
+
+/* -----------------------------------Start of banner-------------------------------- */
+
+.banner{
+    background:linear-gradient(rgba(22, 23, 26, 0.65),rgba(23, 24, 26, 0.65)) ,url(../pics/11.jpg) no-repeat center;
+    background-size: cover; 
+    min-height:100vh;
+    width:100%;
+}
+
+
+.banner .title strong{
+    letter-spacing: 5px;
+    margin-bottom:10px;
+    display:block;
+    font-family: var(--sec-font);
+}
+.banner .title h1{
+    font-size: 2.8em;
+    font-family: var(--pri-font);
+}
+
+.banner .nav .nav-item a{
+    color:white;
+    border: none;
+    border-radius:0;
+    padding: 20px 30px;
+    background: rgba(48,52,65,1);
+    font-weight: bold;
+}
+
+.banner .nav .nav-item .active{
+    background: rgba(48,52,65,1);
+    opacity:.9;
+    border:none;
+    color: var(--sec-color);
+    outline: none;
+}
+.banner .tab-content .tab-pane{
+    background: rgba(48,52,65,1)!important;
+    opacity:0.9;
+    position:relative;
+    z-index:1;
+    
+}
+.banner .tab-content .tab-pane .anemity{
+    position:absolute;
+    background: rgba(48,52,65,1);
+    left:0;
+    padding:0 50px 20px 50px;
+    
+}
+
+.banner .tab-content .tab-pane .search a{
+    background: var(--pri-color);
+    border-radius: 0;
+    font-family: var(--pri-font);
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 14px;
+    transition: .5s;
+    
+}
+.banner .tab-content .tab-pane .search .btn{
+    box-shadow: none;
+    border:none;
+    outline:none;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .tab-content .tab-pane .search a:hover{
+    background: var(--sec-color);
+}
+.banner .tab-content .tab-pane .advance:hover{
+    color: var(--sec-color)!important;
+    cursor:pointer;
+}
+.ico-js{
+    transform: rotate(180deg);
+}
+
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color:var(--sec-color);
+    box-shadow:none;
+    border:none;
+}
+
+.custom-checkbox .custom-control-input~.custom-control-label::before{
+    box-shadow:none;
+}
+
+
+
+
+/* -----------------------------------End of banner-------------------------------- */
+
+/* -- ----------------------------------------Prasid Codes--------------------------- */
+
+/* -----------------------------------Start of Featured Section---------------------------- */
+
+
+.featured{
+    padding: 80px 0;
+}
+
+.featured h1{
+    font-family: var(--pri-font);
+    text-shadow: 1px 1px 5px grey;
+}
+.featured .title p .icon{
+    color: var(--pri-color);
+
+}
+.featured .title p .icon-text{
+    color:grey;
+}
+.featured .card {
+    border:none;
+    transition: .5s;
+}
+.featured .card:hover{
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.332);
+}
+
+.featured .card:hover .card-img .home-heart,
+.featured .card:hover .card-img .badge2{
+    opacity: 1;
+}
+.featured .card:hover .card-content .room{
+    color:var(--sec-color);
+}
+.featured .card:hover .card-title a{
+    color:var(--pri-color);
+}
+
+.featured .card .card-img .img-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.434),rgba(0, 0, 0, 0.397));
+    transition:.5s;
+    opacity:0;
+}
+
+.featured .card .card-img:hover .img-overlay{
+    opacity:1;
+}
+
+.featured .card .card-img .badge1{
+    position: absolute;
+    left:3%;
+    top:5%;
+}
+.featured .card .card-img .badge2{
+    position: absolute;
+    right:3%;
+    top:5%;
+    background: rgba(0, 0, 0, 0.548);
+    color:white;
+    opacity:0;
+    transition: .5s;
+}
+.featured .card .card-img .home-heart{
+    position: absolute;
+    right:5%;
+    bottom:10%;
+    color:white;
+    font-size: 1.5em;
+    opacity:0;
+    transition:.5s;
+}
+.featured .card .card-img .home-heart .fa-heart:hover{
+    cursor:pointer;
+}
+
+.red-color{
+    color:red;
+}
+.featured .card .card-img .home-heart .fa-home:hover{
+    cursor:pointer;
+}
+.blue-color{
+    color: var(--pri-color);
+}
+
+.featured .card .card-title a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Abel','sans-serif';
+    font-size: 1.3em;
+    transition:.5s;
+}
+.featured .card .card-content{
+    font-family: var(--sec-font);
+    color: grey;
+}
+
+/* -----------------------------------End of Featured Section---------------------------- */
+
+/* -- ----------------------------------------Prasid Codes--------------------------- */
+
+/* --------------------------------Start of Sold Property------------------------------------- */
+
+.sold-property{
+    padding: 80px 0;
+}
+
+.sold-property h1{
+    font-family: var(--pri-font);
+    text-shadow: 1px 1px 5px grey;
+}
+
+#owl-sold-property .owl-nav .owl-prev span,
+#owl-sold-property .owl-nav .owl-next span{
+   display: none;
+}
+
+
+#owl-sold-property .owl-nav .owl-next,
+#owl-sold-property .owl-nav .owl-prev{
+    outline:none;
+    background: white;
+    color:grey;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position:relative;
+    font-size: 1.2em;
+    box-shadow: 1px 1px 10px 3px rgba(128, 128, 128, 0.527);
+    position:absolute;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+#owl-sold-property .owl-nav .owl-prev{
+    left:0;
+}
+#owl-sold-property .owl-nav .owl-next{
+    left:98%;
+}
+
+#owl-sold-property .owl-nav .owl-prev::before{
+    content:'\f053';
+    font-family: 'Font Awesome 5 Free';
+    position:absolute;
+    font-weight:600;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#owl-sold-property .owl-nav .owl-next::before{
+    content:'\f054';
+    font-family: 'Font Awesome 5 Free';
+    position:absolute;
+    font-weight:600;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/* --------------------------------End of Sold Property------------------------------------- */
+
+/* --------------------------------Start of Rent Property------------------------------------- */
+
+#owl-rent-property .owl-nav .owl-prev span,
+#owl-rent-property .owl-nav .owl-next span{
+   display: none;
+}
+
+
+#owl-rent-property .owl-nav .owl-next,
+#owl-rent-property .owl-nav .owl-prev{
+    outline:none;
+    background: white;
+    color:grey;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position:relative;
+    font-size: 1.2em;
+    box-shadow: 1px 1px 10px 3px rgba(128, 128, 128, 0.527);
+    position:absolute;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+#owl-rent-property .owl-nav .owl-prev{
+    left:0;
+}
+#owl-rent-property .owl-nav .owl-next{
+    left:98%;
+}
+
+#owl-rent-property .owl-nav .owl-prev::before{
+    content:'\f053';
+    font-family: 'Font Awesome 5 Free';
+    position:absolute;
+    font-weight:600;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#owl-rent-property .owl-nav .owl-next::before{
+    content:'\f054';
+    font-family: 'Font Awesome 5 Free';
+    position:absolute;
+    font-weight:600;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+/* --------------------------------Start of Rent Property------------------------------------- */
+
+/* ------------------------Prasid Codes------------------ */
+
+/* --------------------------------Start of new Home----------------- */
+
+section.new-home{
+    background: linear-gradient(rgba(22, 23, 26, 0.116),rgba(23, 24, 26, 0.151)),url(../pics/new-home-bg.jpg) center no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    min-height:400px;
+    display: flex;
+    align-items: center;
+
+}
+section.new-home a.card {
+    background: rgba(35, 76, 212, 0.7);
+    color:white;
+    text-decoration: none;
+    transition: .5s;
+}
+section.new-home a.card:hover{
+    background: #43c370b2;
+}
+section.new-home a.card .icon-text span{
+    font-size: 1.5em;
+    font-family: 'Abel','sand-serif';
+    color:white;
+    text-decoration:none;
+    font-size: 1.8em;
+    transition: .5s;
+    font-weight:bold;
+}
+section.new-home a.card .icon-text p{
+    font-weight: lighter;
+}
+section.new-home a.card .icon i{
+    color:white;
+    transition: .5s;
+}
+
+
+
+/* --------------------------------End of new Home----------------- */
+
+/* ------------------------Prasid Codes------------------------ */
+
+/* --------------------------------Start of City Property----------------- */
+
+section.city-property{
+    background: url(../pics/cities-bg.jpg);
+    background-size:cover;
+    padding: 80px 0;
+}
+section.city-property h1{
+    font-family: var(--pri-font);
+    text-shadow: 1px 1px 5px grey;
+    text-align: center;
+    display: inline-block;
+}
+
+section.city-property .card{
+    border:none;
+    text-decoration: none;
+    color:white; 
+    position:relative;
+}
+
+section.city-property .card .card-img{
+    height:250px;
+    overflow:hidden;
+}
+section.city-property .card .card-img img{
+    transition: 5s;
+}
+section.city-property .card:hover .card-img img{
+    transform: scale(1.2);
+}
+
+section.city-property .card .card-text{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    
+}
+section.city-property .card .card-text h4{
+    font-family: 'Abel','sans-serif';
+    text-shadow: 1px 1px 5px grey;
+}
+
+/* --------------------------------End of City Property----------------- */
+
+
+/* -------------------------Contact us Section----------------------- */
+
+section.contact-us{
+    background: url(../pics/phone\ .jpg) center no-repeat;
+    background-size:cover;
+    min-height: 500px; 
+    position:relative;
+}
+
+section.contact-us .bread,
+section.contact-us .bread a{
+    color:lightgrey;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+section.contact-us h1,
+section.contact-us h2{
+    font-family: 'abel';
+}
+section.contact-us .ofc{
+    box-shadow: 0 0 32px rgba(0,0,0,0.7);
+    margin-bottom:-50px;
+    background: url(../pics/grass.jpg) no-repeat;
+    background-size: cover;
+    color:lightgrey;
+}
+section.contact-us .ofc pre{
+    color:lightgrey;
+}
+
+section.contact-us .ofc h2{
+    color:lightgrey;
+}
+section.contact-us .ofc a{
+    color: lightgrey;
+    text-decoration:none;
+}
+section.contact-us .ofc a:hover{
+    color:var(--sec-color);
+}
+section.contact-us .ofc pre{
+    font-size:1em;
+}
+section.contact-us .img-pushpa{
+    /* background: url(../pics/pushpa-sir.jpg) center no-repeat;
+    background-size: cover; */
+    top:5.5%;
+    left:58.6%;
+    position:absolute;
+    height:379px;
+    width: 228px;
+    transform: rotate(-6deg) skewY(-3deg);
+}
+
+
+/* -------------------------------Start of Feedback--------------------------- */
+
+section.feedback{
+    padding: 80px 0;
+    padding-top: 120px;
+}
+section.feedback .feedback-title h1{
+    font-family: 'abel';
+    text-shadow: 1px 1px 5px grey;
+}
+section.feedback .form-group .btn{
+    background: var(--pri-color);
+    color:white;
+    border-radius: 0;
+    height: 50px;
+    font-family: 'abel';
+    transition: .5s;
+}
+section.feedback .form-group  ::placeholder{
+    font-family: 'abel';
+}
+section.feedback .form-group .btn:hover{
+    background: var(--sec-color);
+}
+
+/* ------------------------------End of Feedback--------------------------- */
+
+/* ---------------------Start of Wishlist--------------------- */
+
+section.breadcrumbs a,
+section.breadcrumbs p{
+    color:grey;
+    text-decoration: none;
+    margin-bottom:20px;
+    position:relative;
+    display: inline-block;
+}
+section.breadcrumbs p::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:lightgrey;
+}
+
+section.wishlist .wish-btn .btn{
+    background: var(--pri-color);
+    color:white!important;
+    padding:10px 25px;
+    transition:.5s;
+    border-bottom:none!important;
+}
+
+section.wishlist .save-search a{
+    color: black;
+    padding-bottom:10px;
+    border-bottom: 1px dashed blue;
+    text-decoration: none;
+    transition: .5s;
+}
+section.wishlist .save-search:hover a{
+    color:var(--pri-color);
+    border-bottom: 1px solid blue;
+}
+
+
+
+
+/* ---------------------End of Wishlist--------------------- */
+
+/* ---------------------start of Save-search--------------------- */
+
+section.wishlist .save-search .btn{
+    background: var(--sec-color);
+    color:white;
+    padding:10px 25px;
+    transition:.5s;
+    border-bottom:none!important;
+}
+
+section.wishlist .save-search .btn:hover{
+    color:white;
+}
+
+section.wishlist .wish-btn a{
+    color: black;
+    padding-bottom:10px;
+    border-bottom: 1px dashed blue;
+    text-decoration: none;
+    transition: .5s;
+}
+section.wishlist .wish-btn:hover a{
+    color:var(--pri-color);
+    border-bottom: 1px solid blue;
+}
+
+/* ---------------------End of Save-Search--------------------- */
+
+
+/* -----------------------Start of News Section----------------------- */
+
+section.news h1{
+    font-family: var(--pri-font);
+    text-shadow: 1px 1px 3px grey;
+    margin-bottom: 20px;
+}
+
+section.news a.news-title{
+    color: black;
+    font-weight:600;
+    font-size:1.5em;
+    font-family:'abel';
+    text-decoration: none;
+}
+
+section.news a.news-title:hover{
+    color:var(--pri-color);
+}
+
+section.news small.admin{
+    border-right:1px solid lightgrey;
+    display: inline-block;
+    padding-right: 8px;
+    margin-right: 5px;
+}
+
+section.news small a{
+    text-decoration: none;
+}
+
+section.news .card:hover img{
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}
+section.news .card{
+    overflow: hidden;
+    position: relative;
+}
+section.news .card img{
+    transition: .5s;
+    height:200px;
+}
+section.news .card span{
+    color:white;
+    position: absolute;
+    background: var(--sec-color);
+    padding:5px;
+    top:0;
+    right:0;
+}
+section.news p{
+    font-family: 'roboto';
+}
+section.news .aside input{
+    height:50px;
+    border:none;
+    border-radius:0;
+    box-shadow: none;
+    background:#eee;
+    padding-right:50px;
+}
+
+section.news .aside .btn{
+    height:50px;
+    padding:0 20px;
+    background:var(--pri-color);
+    color:white;
+    border-radius:0;
+    transition:.5s;
+}
+section.news .aside .btn:hover{
+    background: var(--sec-color);
+}
+
+section.news .aside .category{
+    font-family: 'abel'; 
+}
+section.news .aside .category a:hover{
+    color:var(--pri-color);
+}
+section.news .aside .category a{
+    color:black;
+    display: inline-block;
+    text-decoration: none;
+    padding:10px;
+    display: block;
+}
+section.news .aside .category a::before{
+    content:'\f360';
+    font-family: 'Font Awesome 5 Free';
+    font-weight:600;
+    margin-right: 10px;
+    color:var(--pri-color);
+}
+section.news .aside .recent a{
+    color:black;
+    text-decoration: none;
+    padding-left: 20px;
+    display: inline-block;
+    border-left: 2px solid var(--pri-color);
+    font-family: 'abel';
+    font-weight:500;
+}
+section.news .aside .recent a:hover{
+    color:var(--pri-color);
+}
+
+section.news .aside .gallery img{
+    margin: 5px;
+}
+
+
+
+/* -----------------------End of News Section----------------------- */
+
+/* -----------------------------Start Of News-Details------------------- */
+
+section.news-detail .top a{
+    text-decoration: none;
+    color:white;
+    font-family: 'abel';
+    font-size: small;
+}
+section.news-detail .top{
+    border-radius: 0;
+    background: var(--pri-color);
+    line-height:20px;
+    transition:.5s;
+}
+section.news-detail .top:hover{
+    background: var(--sec-color);
+}
+
+section.news-detail .title h1{
+    font-family:'abel';
+    font-weight:bolder;
+    display: inline-block;
+    text-align:center;
+}
+
+section.news-detail .comment .image img{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+}
+section.news-detail .comment .image{
+    margin: 15px 0;
+    display: inline-block;
+
+}
+section.news-detail .comment .image b{
+    border-right: 1px solid lightgrey;
+    padding-right:15px;
+}
+
+section.news-detail .comment .history{
+    display:inline-block;
+    text-align: center;
+}
+
+section.news-detail .comment .history i{
+    margin:0 10px;
+    color:var(--pri-color);
+}
+section.news-detail .social-icons{
+    font-family: 'abel';
+}
+section.news-detail .social-icons .btn{
+    margin:0 5px;
+    padding:5px 20px;
+    font-size: small;
+    color:white;
+}
+section.news-detail .social-icons .btn i{
+    margin-right:5px;
+}
+section.news-detail .social-icons .btn:nth-child(1){
+    background: #1877f2;  
+}
+section.news-detail .social-icons .btn:nth-child(2){
+    background: #1da1f2;  
+}
+section.news-detail .social-icons .btn:nth-child(3){
+    background: #007bb5;
+}
+section.news-detail .social-icons .btn:nth-child(4){
+    background: #c32aa3; 
+}
+section.news-detail .tags a{
+    color:black;
+    border:1px solid grey;
+    padding:8px 15px;
+    display: inline-block;
+    text-decoration: none;
+    transition:.5s;
+    font-size:small;
+}
+section.news-detail .tags a:hover{
+    color:white;
+    background: var(--sec-color);
+    border: 1px solid var(--sec-color);
+}
+section.news-detail .admin-comment img{
+    height:100px;
+    width:100px;
+    border-radius: 100%;
+}
+section.news-detail .admin-comment{
+    border: 1px solid var(--pri-color);
+}
+
+section.news-detail .aside input{
+    height:50px;
+    border:none;
+    border-radius:0;
+    box-shadow: none;
+    background:#eee;
+    padding-right:50px;
+}
+
+section.news-detail .aside .btn{
+    height:50px;
+    padding:0 20px;
+    background:var(--pri-color);
+    color:white;
+    border-radius:0;
+    transition:.5s;
+}
+section.news-detail .aside .btn:hover{
+    background: var(--sec-color);
+}
+
+section.news-detail .aside .category{
+    font-family: 'abel'; 
+}
+section.news-detail .aside .category a:hover{
+    color:var(--pri-color);
+}
+section.news-detail .aside .category a{
+    color:black;
+    display: inline-block;
+    text-decoration: none;
+    padding:10px;
+    display: block;
+}
+section.news-detail .aside .category a::before{
+    content:'\f360';
+    font-family: 'Font Awesome 5 Free';
+    font-weight:600;
+    margin-right: 10px;
+    color:var(--pri-color);
+}
+section.news-detail .aside .recent a{
+    color:black;
+    text-decoration: none;
+    padding-left: 20px;
+    display: inline-block;
+    border-left: 2px solid var(--pri-color);
+    font-family: 'abel';
+    font-weight:500;
+}
+section.news-detail .aside .recent a:hover{
+    color:var(--pri-color);
+}
+
+section.news-detail .aside .gallery img{
+    margin: 5px;
+}
+
+section.previous .prev{
+    background: linear-gradient(rgba(0, 0, 0, 0.493),rgba(0, 0, 0, 0.5)),url(../pics/space2.jpg) center no-repeat;
+    background-size: cover;
+    text-decoration: none;
+}
+section.previous .prev:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.808),rgba(0, 0, 0, 0.712)),url(../pics/space2.jpg) center no-repeat;background-size: cover;
+}
+
+section.previous .here{
+    background: linear-gradient(rgba(0, 0, 0, 0.493),rgba(0, 0, 0, 0.5)),url(../pics/space1.jpg) center no-repeat;
+    background-size: cover;
+}
+section.related-post h1{
+    font-family: var(--pri-font);
+    text-shadow:1px 1px 3px grey;
+    margin: 25px 0;
+}
+
+section.related-post a{
+    text-decoration: none;
+    color:black;
+    display: block;
+    font-size: x-large;
+    font-family: 'abel';
+}
+section.related-post a:hover{
+    color: var(--pri-color);
+}
+section.related-post span{
+    padding: 5px 15px;
+    background: var(--sec-color);
+    color:white;
+    display: inline-block;
+    margin:15px 0;
+    font-size:small;
+}
+section.related-post p{
+    font-family: var(--sec-font);
+    margin:15px 0;
+}
+section.related-post img:hover{
+    opacity:.9;
+}
+
+
+/* -----------------------------Start Of News-Details------------------- */
+
+/* --------------------------Prasid Codes------------------------ */
+
+/* -----------------------------Start Of News-Home------------------- */
+
+section.new-home-category .top-category .input-box{
+    margin:10px; 
+    position: relative;
+}  
+
+section.new-home-category .top-category .input-box .custom-select{
+    border:none;
+    cursor: pointer;
+    box-shadow: none;
+}
+section.new-home-category .top-category .input-box button{
+    position: relative;
+    box-shadow: none;    
+}
+section.new-home-category .top-category .input-box .dropdown-menu{
+    width:250px;
+}
+section.new-home-category .top-category .search{
+    font-family: 'abel';
+    background: var(--pri-color);
+    margin:10px;
+    color:white;
+    cursor:pointer;
+    transition:.5s;
+}
+section.new-home-category .top-category .search:hover{
+    background: var(--sec-color);
+}
+
+section.new-home-category .top-category .input-box::before{
+    content:'';
+    position: absolute;
+    height:100%;
+    width: 1px;
+    background: lightgrey;
+    right:105%;
+}
+section.new-home-category .top-category .price::after{
+    content:'';
+    position: absolute;
+    height:100%;
+    width: 1px;
+    background: lightgrey;
+    left:100%;
+    top:0;
+}
+
+/* ------------------------right side cards---------------- */
+
+section.new-home-category .cards{
+    border:none;
+    overflow: hidden;
+    border-radius: 0;
+    display: block;
+}
+
+section.new-home-category .cards .overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.5);
+    top:0;
+    opacity:.5;
+}
+ 
+section.new-home-category .cards .img-content{
+    position:absolute;
+    bottom:5%;
+    left:3%;
+    color:#eee;
+    opacity:0;
+    transition:.5s;
+}
+
+section.new-home-category .cards .home-heart{
+    position: absolute;
+    color:white;
+    right:5%;
+    bottom:40%;
+    font-size: 1.2em;
+    transition:1s;
+    transform: scale(0);
+}
+
+section.new-home-category .cards .badges{
+    position: absolute;
+    top:2%;
+    left:5%;
+}
+section.new-home-category .cards .badges .badge1{
+    transform: scale(0);
+    transition:.5s;
+}
+section.new-home-category .cards .badges .badge2{
+    transform: scale(0);
+    transition:.5s;
+}
+
+section.new-home-category .cards .camera{
+    opacity:1;
+    position: absolute;
+    right:5%;
+    top:3%;
+    color:white;
+    background: #000;
+    transition:.5s;
+    transform: scale(0);
+}
+
+section.new-home-category .cards:hover .badge1{
+    transform: scale(1);
+    
+}
+section.new-home-category .cards:hover .badge2{
+    transform: scale(1);
+    transition-delay: .3s;
+}
+section.new-home-category .cards:hover .camera{
+    transform: scale(1);
+    transition-delay: .5s;
+}
+section.new-home-category .cards:hover .overlay{
+    opacity:1;
+}
+section.new-home-category .cards:hover .img-content{
+    transition-delay: .5s;
+    opacity:1;
+}
+section.new-home-category .cards:hover .home-heart{
+    transform:scale(1);
+    transition-delay:1s;
+}
+
+/* -----------------------------End Of News-Home------------------- */
+

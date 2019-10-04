@@ -1,0 +1,182 @@
+
+:root {
+    --bg-color: #303441;
+    --pri-color: #234DD4;
+    --sec-color:#43c370;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*--------------------
+---------------------*/
+
+.whychooseus{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('../images/background1.png');
+    padding: 70px 0px;
+    cursor: default;
+}
+
+.whychooseus h1{
+    color: white;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 5px grey;
+    font-family: var(--pri-font);
+}
+
+.whychooseus .why{
+    border-top: 3px solid var(--sec-color);
+    padding: 30px 20px 30px 20px;
+    transition: .5s;
+}
+
+.whychooseus .why:hover{
+    background: #43c370;
+    
+}
+
+.whychooseus .why i{
+    font-size: 45px;
+    color: white;
+    padding: 20px 30px 20px 0px;
+}
+
+.whychooseus .why h6{
+    color: white;
+    padding-bottom: 10px;
+    font-weight:bold;
+    font-family: var(--sec-font);
+    
+}
+
+.whychooseus .why p{
+    color: white;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 767px){
+    
+    .whychooseus .why{
+      display: block !important;
+      text-align: center;
+    }
+
+    .whychooseus .why i{
+        padding: 10px 30px 20px 0px;
+    }
+}
+
+/*-------------------
+--------------------*/
+
+.becomeagent{
+    background: var(--pri-color);
+  
+}
+
+.become{
+    padding: 20px 0px;
+}
+
+.becomeagent .become .fa-users-cog{
+    font-size: 100px;
+    color: white;
+}
+
+
+.becomeagent .become h1{
+    padding: 25px 50px 0px 40px;
+    color: white;
+    text-shadow: 1px 1px 5px grey;
+    font-family: 'Abel';
+    letter-spacing: 1px;
+}
+
+.becomeagent .button {
+    padding: 45px 0px 0px 90px;
+}
+
+.becomeagent .button a{
+    background: white;
+    padding: 12px 40px 12px 40px;
+    border-radius: 0;
+    font-weight: bold;
+    color: grey;
+    transition: .5s;
+    font-family: 'Abel';
+}
+
+.becomeagent .button a:hover{
+    background: var(--sec-color);
+    color: white;
+}
+
+
+.becomeagent .button .fa-user{
+    padding-right: 15px;
+    color: grey;
+    transition: .5s;
+}
+
+.becomeagent .button a:hover .fa-user{
+    color: white;
+}
+
+@media only screen and (max-width: 767px){
+    .becomeagent{
+        padding: 0px 0px 50px 0px;
+    }
+
+    .becomeagent .become{
+        display: block !important;
+        text-align: center;
+    }
+
+    .becomeagent .become h1{
+        font-size: 34px;
+    }
+
+    
+.becomeagent .button {
+    padding: 25px 0px 0px 0px;
+    text-align: center;
+    }
+}
+
+/*--------------
+--------------*/
+.ourpartners{
+    padding: 60px 0px 40px 0px;
+}
+
+.ourpartners h1{
+    padding: 10px 0px 50px 0px; 
+    text-shadow: 1px 1px 5px grey;
+    font-family: var(--pri-font);
+}
+
+.ourpartners .images img{
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+.ourpartners .images img:hover{
+  filter: grayscale(0%);
+}
+
+
+@media only screen and (max-width: 767px){
+    .ourpartners .images{
+        text-align: center;
+    }
+
+    .ourpartners .images img{
+        padding-bottom: 40px;
+    }
+}
+
+/*--------------------
+--------------------*/
